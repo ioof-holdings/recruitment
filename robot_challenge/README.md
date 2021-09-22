@@ -1,6 +1,6 @@
 # Robot Challenge
 
-This code challenge should be a showcase of your programming skills. We encourage you to slightly over engineer this solution with good class design principles applied, good function names and variable names and a well structured program.
+This code challenge should be a showcase of your programming skills. We encourage you to slightly over engineer your solution with good class design principles applied, good function names, variable names and a well structured program.
 
 You are welcome to complete the challenge in any language you are comfortable with, keeping in mind the above about showcasing your best skills. Typically we see submissions in Java, C#, JavaScript and Python.
 
@@ -88,6 +88,6 @@ By default the first robot placed will become the active robot.
 
 ## Deliverables
 
-The source files, the test data and any test code. Ideally we'd prefer a link to your repository on github, but can also accept submissions via [email](mailto:recruitment@ioof.com.au).
+The source files, the test data and any test code. Ideally we'd prefer a link to your repository on github, but can also accept submissions via [email](mailto:recruitment@ioof.com.au). 
 
 It is not required to provide any graphical output showing the movement of the toy robot.
