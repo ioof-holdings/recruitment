@@ -88,6 +88,6 @@ By default the first robot placed will become the active robot.
 
 ## Deliverables
 
-The source files, the test data and any test code. Ideally we'd prefer a link to your repository on github, but can also accept submissions via [email](mailto:gemma.bardsley@ioof.com.au). 
+The source files, the test data and any test code. Ideally we'd prefer a link to your repository on github, however we can also accept submissions via [email](mailto:gemma.bardsley@ioof.com.au). When you apply through seek there will be a space to include the github link.
 
 It is not required to provide any graphical output showing the movement of the toy robot.
