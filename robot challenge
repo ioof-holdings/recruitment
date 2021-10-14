@@ -1,0 +1,77 @@
+# Recruitment
+lines = []
+while True:
+    line = input()
+    if line:
+        lines.append(line)
+    else:
+        break
+
+text = '\n'.join(lines)
+
+def move(x,y,f):
+    if(f=='EAST'):
+        x+=1
+    elif(f=='WEST'):
+        x-=1
+    elif(f=='NORTH'):
+        y+=1
+    elif(f=='SOUTH'):
+        y-=1
+    else:
+        print("invalid move input")
+        
+    return x,y
+
+def report(x,y,f):
+    print(x,',',y,',',f)
+
+
+def rotate_left(f):
+    if(f=='EAST'):
+        f='NORTH'
+    elif(f=='WEST'):
+        f='SOUTH'
+    elif(f=='NORTH'):
+        f='WEST'
+    elif(f=='SOUTH'):
+        f='EAST'
+    else:
+        print("invalid rotate left input")       
+    
+    return f
+
+def rotate_right(f):
+    if(f=='EAST'):
+        f='SOUTH'
+    elif(f=='WEST'):
+        f='NORTH'
+    elif(f=='NORTH'):
+        f='EAST'
+    elif(f=='SOUTH'):
+        f='WEST'
+    else:
+        print("invalid rotate right input")    
+    
+    return f
+
+text_split = text.split("\n")
+text_initial = text_split[0].split(" ")
+text_initial = text_initial[1].split(",")
+text_initial
+
+x=int(text_initial[0])
+y=int(text_initial[1])
+f=text_initial[2]
+
+for i in range(1,len(text_split)):
+    if(text_split[i]=='MOVE'):
+        x,y=move(x,y,f)
+    elif(text_split[i]=='REPORT'):
+        report(x,y,f)
+    elif(text_split[i]=='LEFT'):
+        f=rotate_left(f)
+    elif(text_split[i]=='RIGHT'):
+        f=rotate_right(f)
+    else:
+        print("invalid input")
